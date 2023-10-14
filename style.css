@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    background-color: rgb(12, 12, 12);
+    .hero__h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    padding-top: 2rem;
+    }
+    .hero__contenedor {
+        height: 80%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .hero__izquierda {
+
+    }
+    .hero__h2{
+        font-size: 2rem
+    }
+    .hero__formulario--agregar {
+        display: flex;
+        justify-content: center;
+        height: 70%;
+        flex-direction: column;
+    }
+    .hero__input--agregar, .hero__submit--agregar {
+        padding-left: 10px;
+        height: 2rem;
+        border-radius: 20px;
+        border: none;
+    }
+    .hero__input--agregar {
+        font-size: 1.2rem;
+        width: 40%;
+        margin: 0.5rem auto;
+    }
+    .hero__submit--agregar{
+        cursor: pointer;
+        font-size: 1.2rem;
+        background-color: rgb(25, 25, 247);
+        color: #fff;
+        width: 41%;
+        margin: 0.5rem auto;
+    }
+    .hero__submit--agregar:hover {
+        width: 39%;
+        transition: 1s;
+    }
+    .hero__h2 {
+        padding-top: 2rem;
+        color: #fff;
+        text-align: center;
+    }
+    .hero__derecha {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+}
+/* $numero = null;
+
+if (isset($_GET["precio1"])) {
+$numero = $_GET['precio1'];
+
+$update = "UPDATE servicios SET precio = $numero WHERE id= 1";
+
+$stmt2 = $db->prepare($update);
+
+$stmt2->execute();
+} */
