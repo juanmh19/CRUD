@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pdo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="hero">
+        <h1 class="hero__h1">CRUD</h1>
+        <div class="hero__contenedor">
+            <div class="hero__izquierda">
+                <h2 class="hero__h2">Agregar Nuevo Producto</h2>
+                <form class="hero__formulario--agregar" action="index.php" method="POST">
+                    <input id="ropar" class="hero__input--agregar" name="ropa" type="text" placeholder="Ropa" required>
+                    <input class="hero__input--agregar" name="precio" type="number" placeholder="Precio" required>
+                    <input class="hero__input--agregar" name="talle" type="text" placeholder="Talle" required>
+                    <input class="hero__input--agregar" name="color" type="text" placeholder="Color" required>
+                    <input class="hero__submit--agregar" type="submit">
+                </form>
+            </div>
+
+            <div class="hero__derecha">
+                <form class="hero__formulario" action="index.php" metod="POST">
+                     <input type="number" metod="post" value="null" id="precio1" name="precio1">
+                     <br>
+                     <input type="submit" value="actualizar">
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
